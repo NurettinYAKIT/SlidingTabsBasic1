@@ -80,6 +80,21 @@ public class MainActivity extends SampleActivityBase implements NavigationDrawer
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+        setupActionBar();
+    }
+
+    protected void setupActionBar()
+    {
+        final ActionBar actionBar = getActionBar();
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setLogo(R.drawable.icon);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowTitleEnabled(true);
+
+//        actionBar.setHomeButtonEnabled(false);
     }
 
     public void onSectionAttached(int number) {
@@ -111,10 +126,6 @@ public class MainActivity extends SampleActivityBase implements NavigationDrawer
                 .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
                 .commit();
         Log.d("App","onNavigationDrawerItemSelected"+position);
-
-
-        SlidingTabsBasicFragment.setPage(this.findViewById(R.id.container),position + 1);
-
 
     }
 

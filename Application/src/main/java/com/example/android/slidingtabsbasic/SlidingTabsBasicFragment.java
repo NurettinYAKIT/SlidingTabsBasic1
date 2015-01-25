@@ -86,17 +86,6 @@ public class SlidingTabsBasicFragment extends Fragment {
     // END_INCLUDE (fragment_onviewcreated)
 
 
-    public static ViewPager setPage(View view,int position){
-
-//        mViewPager.getAdapter().instantiateItem(container,position);
-
-        ViewPager  mViewPager = (ViewPager) view.findViewById(R.id.viewpager);
-
-
-        return mViewPager;
-    }
-
-
     /**
      * The {@link android.support.v4.view.PagerAdapter} used to display pages in this sample.
      * The individual pages are simple and just display two lines of text. The important section of
