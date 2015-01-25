@@ -110,15 +110,32 @@ public class MainActivity extends SampleActivityBase implements NavigationDrawer
         fragmentManager.beginTransaction()
                 .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
                 .commit();
+        Log.d("App","onNavigationDrawerItemSelected"+position);
+
+
+        SlidingTabsBasicFragment.setPage(this.findViewById(R.id.container),position + 1);
+
+
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+        if (!mNavigationDrawerFragment.isDrawerOpen()) {
+            // Only show items in the action bar relevant to this screen
+            // if the drawer is not showing. Otherwise, let the drawer
+            // decide what to show in the action bar.
+            getMenuInflater().inflate(R.menu.main, menu);
+            restoreActionBar();
+
+            return true;
+        }
+        return super.onCreateOptionsMenu(menu);
     }
 
+
+
+/*
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         MenuItem logToggle = menu.findItem(R.id.menu_toggle_log);
@@ -127,6 +144,7 @@ public class MainActivity extends SampleActivityBase implements NavigationDrawer
 
         return super.onPrepareOptionsMenu(menu);
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -144,6 +162,8 @@ public class MainActivity extends SampleActivityBase implements NavigationDrawer
         }
         return super.onOptionsItemSelected(item);
     }
+*/
+
 
     /** Create a chain of targets that will receive log data */
     @Override
