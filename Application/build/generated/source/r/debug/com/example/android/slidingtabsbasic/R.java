@@ -11,13 +11,16 @@ public final class R {
     public static final class attr {
     }
     public static final class dimen {
-        public static final int horizontal_page_margin=0x7f040000;
-        public static final int margin_huge=0x7f040001;
-        public static final int margin_large=0x7f040002;
-        public static final int margin_medium=0x7f040003;
-        public static final int margin_small=0x7f040004;
-        public static final int margin_tiny=0x7f040005;
-        public static final int vertical_page_margin=0x7f040006;
+        public static final int activity_horizontal_margin=0x7f040000;
+        public static final int activity_vertical_margin=0x7f040001;
+        public static final int horizontal_page_margin=0x7f040002;
+        public static final int margin_huge=0x7f040003;
+        public static final int margin_large=0x7f040004;
+        public static final int margin_medium=0x7f040005;
+        public static final int margin_small=0x7f040006;
+        public static final int margin_tiny=0x7f040007;
+        public static final int navigation_drawer_width=0x7f040008;
+        public static final int vertical_page_margin=0x7f040009;
     }
     public static final class drawable {
         public static final int drawer_shadow=0x7f020000;
@@ -26,23 +29,28 @@ public final class R {
         public static final int tile=0x7f020003;
     }
     public static final class id {
-        public static final int action_example=0x7f08000a;
-        public static final int action_settings=0x7f080008;
-        public static final int item_subtitle=0x7f080006;
-        public static final int item_title=0x7f080007;
-        public static final int log_fragment=0x7f080002;
-        public static final int menu_toggle_log=0x7f080009;
-        public static final int sample_content_fragment=0x7f080003;
-        public static final int sample_main_layout=0x7f080000;
-        public static final int sample_output=0x7f080001;
-        public static final int sliding_tabs=0x7f080004;
-        public static final int viewpager=0x7f080005;
+        public static final int action_example=0x7f08000e;
+        public static final int action_settings=0x7f08000c;
+        public static final int container=0x7f080001;
+        public static final int drawer_layout=0x7f080000;
+        public static final int item_subtitle=0x7f08000a;
+        public static final int item_title=0x7f08000b;
+        public static final int log_fragment=0x7f080003;
+        public static final int menu_toggle_log=0x7f08000d;
+        public static final int navigation_drawer=0x7f080005;
+        public static final int sample_content_fragment=0x7f080004;
+        public static final int sample_main_layout=0x7f080006;
+        public static final int sample_output=0x7f080002;
+        public static final int section_label=0x7f080007;
+        public static final int sliding_tabs=0x7f080008;
+        public static final int viewpager=0x7f080009;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int fragment_navigation_drawer=0x7f030001;
-        public static final int fragment_sample=0x7f030002;
-        public static final int pager_item=0x7f030003;
+        public static final int fragment_main=0x7f030001;
+        public static final int fragment_navigation_drawer=0x7f030002;
+        public static final int fragment_sample=0x7f030003;
+        public static final int pager_item=0x7f030004;
     }
     public static final class menu {
         public static final int global=0x7f070000;
