@@ -16,6 +16,7 @@
 
 package com.example.android.slidingtabsbasic;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
@@ -64,6 +65,14 @@ public class MainActivity extends SampleActivityBase {
             transaction.commit();
         }
     }
+
+    public void restoreActionBar() {
+        ActionBar actionBar = getActionBar();
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setTitle(mTitle);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
