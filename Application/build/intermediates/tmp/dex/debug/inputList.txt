@@ -1,0 +1,4 @@
+/Users/nurettinyakit/AndroidStudioProjects/SlidingTabsBasic1/Application/build/intermediates/classes/debug
+/Users/nurettinyakit/AndroidStudioProjects/SlidingTabsBasic1/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-6b221623c5f261c2c0f4c2257ef3ba0b74435d8c.jar
+/Users/nurettinyakit/AndroidStudioProjects/SlidingTabsBasic1/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-d594daf17426dc24108919c07f134ea39572aab1.jar
+/Users/nurettinyakit/AndroidStudioProjects/SlidingTabsBasic1/Application/build/intermediates/pre-dexed/debug/classes-0fb9a9e1770f9f3d849774f12319079abcc0fd0c.jar
