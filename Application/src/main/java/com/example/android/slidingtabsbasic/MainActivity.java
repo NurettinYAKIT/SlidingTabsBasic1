@@ -22,6 +22,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -35,6 +36,7 @@ import com.example.android.common.logger.Log;
 import com.example.android.common.logger.LogFragment;
 import com.example.android.common.logger.LogWrapper;
 import com.example.android.common.logger.MessageOnlyLogFilter;
+import com.example.android.common.view.SlidingTabLayout;
 
 /**
  * A simple launcher activity containing a summary sample description, sample log and a custom
@@ -87,12 +89,12 @@ public class MainActivity extends SampleActivityBase implements NavigationDrawer
     protected void setupActionBar()
     {
         final ActionBar actionBar = getActionBar();
-        actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+//        actionBar.setDisplayShowTitleEnabled(true);
+//        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setLogo(R.drawable.icon);
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowTitleEnabled(true);
+//        actionBar.setDisplayShowTitleEnabled(true);
 
 //        actionBar.setHomeButtonEnabled(false);
     }
@@ -126,6 +128,12 @@ public class MainActivity extends SampleActivityBase implements NavigationDrawer
                 .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
                 .commit();
         Log.d("App","onNavigationDrawerItemSelected"+position);
+
+        /* Sadece ikinci menuyu (drawer) secerse ortadaki tab i ikinciye getir. */
+        if(position==1){
+            ViewPager vp = (ViewPager) findViewById(R.id.viewpager);
+            vp.setCurrentItem(position);
+        }
 
     }
 
