@@ -43,20 +43,21 @@ public final class R {
         public static final int drawer_shadow=0x7f020001;
         public static final int ic_drawer=0x7f020002;
         public static final int ic_launcher=0x7f020003;
-        public static final int icon=0x7f020004;
-        public static final int splash=0x7f020005;
-        public static final int theme_black=0x7f020007;
-        public static final int tile=0x7f020006;
-        public static final int trans_draw=0x7f020008;
+        public static final int ic_share=0x7f020004;
+        public static final int icon=0x7f020005;
+        public static final int splash=0x7f020006;
+        public static final int theme_black=0x7f020008;
+        public static final int tile=0x7f020007;
+        public static final int trans_draw=0x7f020009;
     }
     public static final class id {
-        public static final int action_example=0x7f09000d;
         public static final int action_settings=0x7f09000c;
         public static final int container=0x7f090001;
         public static final int drawer_layout=0x7f090000;
         public static final int item_subtitle=0x7f09000a;
         public static final int item_title=0x7f09000b;
         public static final int log_fragment=0x7f090003;
+        public static final int menu_share=0x7f09000d;
         public static final int navigation_drawer=0x7f090005;
         public static final int sample_content_fragment=0x7f090004;
         public static final int sample_main_layout=0x7f090006;
@@ -93,10 +94,12 @@ public final class R {
     public static final class style {
         public static final int AppTheme=0x7f060000;
         public static final int MyActionBar=0x7f060001;
-        public static final int Theme_Base=0x7f060002;
-        public static final int Theme_Sample=0x7f060003;
-        public static final int Widget=0x7f060004;
-        public static final int Widget_SampleMessage=0x7f060005;
-        public static final int Widget_SampleMessageTile=0x7f060006;
+        public static final int MyCustomTheme=0x7f060002;
+        public static final int MyCustomTheme_OverFlow=0x7f060003;
+        public static final int Theme_Base=0x7f060004;
+        public static final int Theme_Sample=0x7f060005;
+        public static final int Widget=0x7f060006;
+        public static final int Widget_SampleMessage=0x7f060007;
+        public static final int Widget_SampleMessageTile=0x7f060008;
     }
 }

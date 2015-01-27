@@ -19,10 +19,19 @@
      <item android:id="@+id/menu_toggle_log"
            android:showAsAction="always"
            android:title="@string/sample_show_log" />
-  -->
+
 
      <item android:id="@+id/action_example" android:title="@string/action_example"
          android:showAsAction="withText|ifRoom" />
-     <item android:id="@+id/action_settings" android:title="@string/action_settings"
-         android:orderInCategory="100" android:showAsAction="never" />
+-->
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" android:icon="@drawable/ic_drawer" android:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/ic_share"
+        android:showAsAction="always"
+        android:title="Share"
+        />
  </menu>
