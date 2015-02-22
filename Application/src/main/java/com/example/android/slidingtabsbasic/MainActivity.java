@@ -26,17 +26,16 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuItem;
+
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ViewAnimator;
 
 import com.example.android.common.activities.SampleActivityBase;
 import com.example.android.common.logger.Log;
 import com.example.android.common.logger.LogFragment;
 import com.example.android.common.logger.LogWrapper;
 import com.example.android.common.logger.MessageOnlyLogFilter;
-import com.example.android.common.view.SlidingTabLayout;
+
 
 /**
  * A simple launcher activity containing a summary sample description, sample log and a custom
@@ -48,9 +47,6 @@ import com.example.android.common.view.SlidingTabLayout;
 public class MainActivity extends SampleActivityBase implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     public static final String TAG = "MainActivity";
-
-    // Whether the Log Fragment is currently shown
-    private boolean mLogShown;
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -89,14 +85,15 @@ public class MainActivity extends SampleActivityBase implements NavigationDrawer
     protected void setupActionBar()
     {
         final ActionBar actionBar = getActionBar();
-//        actionBar.setDisplayShowTitleEnabled(true);
-//        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
-        actionBar.setDisplayUseLogoEnabled(true);
-        actionBar.setLogo(R.drawable.icon);
-        actionBar.setDisplayHomeAsUpEnabled(true);
-//        actionBar.setDisplayShowTitleEnabled(true);
 
-//        actionBar.setHomeButtonEnabled(false);
+        if(null!=actionBar){
+            actionBar.setDisplayShowTitleEnabled(true);
+            actionBar.setDisplayUseLogoEnabled(true);
+            actionBar.setLogo(R.drawable.icon);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
+
     }
 
     public void onSectionAttached(int number) {
@@ -115,9 +112,11 @@ public class MainActivity extends SampleActivityBase implements NavigationDrawer
 
     public void restoreActionBar() {
         ActionBar actionBar = getActionBar();
-        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
-        actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setTitle(mTitle);
+        if(null!=actionBar){
+            actionBar.setDisplayShowTitleEnabled(true);
+            actionBar.setTitle(mTitle);
+        }
+
     }
 
     @Override
@@ -131,6 +130,9 @@ public class MainActivity extends SampleActivityBase implements NavigationDrawer
 
         /* Sadece ikinci menuyu (drawer) secerse ortadaki tab i ikinciye getir. */
         if(position==1){
+            ViewPager vp = (ViewPager) findViewById(R.id.viewpager);
+            vp.setCurrentItem(position);
+        }else if(position==2){
             ViewPager vp = (ViewPager) findViewById(R.id.viewpager);
             vp.setCurrentItem(position);
         }
@@ -232,8 +234,7 @@ public class MainActivity extends SampleActivityBase implements NavigationDrawer
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-            return rootView;
+            return inflater.inflate(R.layout.fragment_main, container, false);
         }
 
         @Override

@@ -10,22 +10,6 @@ package com.example.android.slidingtabsbasic;
 public final class R {
     public static final class attr {
     }
-    public static final class color {
-        public static final int background=0x7f070000;
-        public static final int black=0x7f070001;
-        public static final int blue_sky=0x7f070002;
-        public static final int gray=0x7f070003;
-        public static final int gray_border=0x7f070004;
-        public static final int gray_dk=0x7f070005;
-        public static final int main_pink=0x7f070006;
-        public static final int red_light=0x7f070007;
-        public static final int tab_bg_yellow=0x7f070008;
-        public static final int theme_black=0x7f070009;
-        public static final int theme_dark=0x7f07000a;
-        public static final int transparent=0x7f07000b;
-        public static final int white=0x7f07000c;
-        public static final int white_smoke=0x7f07000d;
-    }
     public static final class dimen {
         public static final int activity_horizontal_margin=0x7f040000;
         public static final int activity_vertical_margin=0x7f040001;
@@ -71,32 +55,31 @@ public final class R {
         public static final int spinner_ab_pressed_example=0x7f02001d;
         public static final int spinner_background_ab_example=0x7f02001e;
         public static final int splash=0x7f02001f;
-        public static final int tab_indicator_ab_example=0x7f020020;
-        public static final int tab_selected_example=0x7f020021;
-        public static final int tab_selected_focused_example=0x7f020022;
-        public static final int tab_selected_pressed_example=0x7f020023;
-        public static final int tab_unselected_example=0x7f020024;
-        public static final int tab_unselected_focused_example=0x7f020025;
-        public static final int tab_unselected_pressed_example=0x7f020026;
-        public static final int theme_black=0x7f020028;
-        public static final int tile=0x7f020027;
-        public static final int trans_draw=0x7f020029;
+        public static final int tab_bg=0x7f020020;
+        public static final int tab_indicator_ab_example=0x7f020021;
+        public static final int tab_selected_bg=0x7f020022;
+        public static final int tab_selected_example=0x7f020023;
+        public static final int tab_selected_focused_example=0x7f020024;
+        public static final int tab_selected_pressed_example=0x7f020025;
+        public static final int tab_unselected_example=0x7f020026;
+        public static final int tab_unselected_focused_example=0x7f020027;
+        public static final int tab_unselected_pressed_example=0x7f020028;
+        public static final int tile=0x7f020029;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000c;
-        public static final int container=0x7f090001;
-        public static final int drawer_layout=0x7f090000;
-        public static final int item_subtitle=0x7f09000a;
-        public static final int item_title=0x7f09000b;
-        public static final int log_fragment=0x7f090003;
-        public static final int menu_share=0x7f09000d;
-        public static final int navigation_drawer=0x7f090005;
-        public static final int sample_content_fragment=0x7f090004;
-        public static final int sample_main_layout=0x7f090006;
-        public static final int sample_output=0x7f090002;
-        public static final int section_label=0x7f090007;
-        public static final int sliding_tabs=0x7f090008;
-        public static final int viewpager=0x7f090009;
+        public static final int action_settings=0x7f08000b;
+        public static final int container=0x7f080001;
+        public static final int drawer_layout=0x7f080000;
+        public static final int item_subtitle=0x7f080009;
+        public static final int item_title=0x7f08000a;
+        public static final int log_fragment=0x7f080003;
+        public static final int menu_share=0x7f08000c;
+        public static final int navigation_drawer=0x7f080005;
+        public static final int sample_content_fragment=0x7f080004;
+        public static final int sample_output=0x7f080002;
+        public static final int section_label=0x7f080006;
+        public static final int sliding_tabs=0x7f080007;
+        public static final int viewpager=0x7f080008;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -107,8 +90,8 @@ public final class R {
         public static final int splash=0x7f030005;
     }
     public static final class menu {
-        public static final int global=0x7f080000;
-        public static final int main=0x7f080001;
+        public static final int global=0x7f070000;
+        public static final int main=0x7f070001;
     }
     public static final class string {
         public static final int action_example=0x7f050000;
@@ -128,10 +111,15 @@ public final class R {
         public static final int MyActionBar=0x7f060001;
         public static final int MyCustomTheme=0x7f060002;
         public static final int MyCustomTheme_OverFlow=0x7f060003;
-        public static final int Theme_Base=0x7f060004;
-        public static final int Theme_Sample=0x7f060005;
-        public static final int Widget=0x7f060006;
-        public static final int Widget_SampleMessage=0x7f060007;
-        public static final int Widget_SampleMessageTile=0x7f060008;
+        public static final int MyTheme_ActionBar_TabBar=0x7f060004;
+        /**  This is a WHITE tab color 
+         */
+        public static final int MyTheme_ActionBar_TabText=0x7f060005;
+        public static final int MyTheme_ActionBar_TabView=0x7f060006;
+        public static final int Theme_Base=0x7f060007;
+        public static final int Theme_Sample=0x7f060008;
+        public static final int Widget=0x7f060009;
+        public static final int Widget_SampleMessage=0x7f06000a;
+        public static final int Widget_SampleMessageTile=0x7f06000b;
     }
 }
