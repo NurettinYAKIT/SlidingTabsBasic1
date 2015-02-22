@@ -112,8 +112,6 @@ public final class R {
         public static final int MyCustomTheme=0x7f060002;
         public static final int MyCustomTheme_OverFlow=0x7f060003;
         public static final int MyTheme_ActionBar_TabBar=0x7f060004;
-        /**  This is a WHITE tab color 
-         */
         public static final int MyTheme_ActionBar_TabText=0x7f060005;
         public static final int MyTheme_ActionBar_TabView=0x7f060006;
         public static final int Theme_Base=0x7f060007;
