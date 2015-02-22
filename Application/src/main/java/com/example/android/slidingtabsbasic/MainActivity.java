@@ -47,6 +47,7 @@ import com.example.android.common.logger.MessageOnlyLogFilter;
 public class MainActivity extends SampleActivityBase implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     public static final String TAG = "MainActivity";
+    public static boolean isCreated = false;
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -80,6 +81,7 @@ public class MainActivity extends SampleActivityBase implements NavigationDrawer
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
         setupActionBar();
+        isCreated = true;
     }
 
     protected void setupActionBar()
@@ -128,14 +130,26 @@ public class MainActivity extends SampleActivityBase implements NavigationDrawer
                 .commit();
         Log.d("App","onNavigationDrawerItemSelected"+position);
 
-        /* Sadece ikinci menuyu (drawer) secerse ortadaki tab i ikinciye getir. */
-        if(position==1){
-            ViewPager vp = (ViewPager) findViewById(R.id.viewpager);
-            vp.setCurrentItem(position);
-        }else if(position==2){
-            ViewPager vp = (ViewPager) findViewById(R.id.viewpager);
-            vp.setCurrentItem(position);
+        
+        setPagerPosition(position);
+
+    }
+
+    private void setPagerPosition(int position) {
+
+        if(isCreated){
+            if(position==0){
+                ViewPager vp = (ViewPager) findViewById(R.id.viewpager);
+                vp.setCurrentItem(position);
+            }else if(position==1){
+                ViewPager vp = (ViewPager) findViewById(R.id.viewpager);
+                vp.setCurrentItem(position);
+            }else if(position==2){
+                ViewPager vp = (ViewPager) findViewById(R.id.viewpager);
+                vp.setCurrentItem(position);
+            }
         }
+
 
     }
 
