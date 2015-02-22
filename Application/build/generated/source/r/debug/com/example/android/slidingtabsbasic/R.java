@@ -44,27 +44,30 @@ public final class R {
         public static final int list_focused_example=0x7f020012;
         public static final int list_pressed_example=0x7f020013;
         public static final int menu_dropdown_panel_example=0x7f020014;
-        public static final int progress_bg_example=0x7f020015;
-        public static final int progress_horizontal_example=0x7f020016;
-        public static final int progress_primary_example=0x7f020017;
-        public static final int progress_secondary_example=0x7f020018;
-        public static final int selectable_background_example=0x7f020019;
-        public static final int spinner_ab_default_example=0x7f02001a;
-        public static final int spinner_ab_disabled_example=0x7f02001b;
-        public static final int spinner_ab_focused_example=0x7f02001c;
-        public static final int spinner_ab_pressed_example=0x7f02001d;
-        public static final int spinner_background_ab_example=0x7f02001e;
-        public static final int splash=0x7f02001f;
-        public static final int tab_bg=0x7f020020;
-        public static final int tab_indicator_ab_example=0x7f020021;
-        public static final int tab_selected_bg=0x7f020022;
-        public static final int tab_selected_example=0x7f020023;
-        public static final int tab_selected_focused_example=0x7f020024;
-        public static final int tab_selected_pressed_example=0x7f020025;
-        public static final int tab_unselected_example=0x7f020026;
-        public static final int tab_unselected_focused_example=0x7f020027;
-        public static final int tab_unselected_pressed_example=0x7f020028;
-        public static final int tile=0x7f020029;
+        public static final int normal=0x7f020015;
+        public static final int press=0x7f020016;
+        public static final int progress_bg_example=0x7f020017;
+        public static final int progress_horizontal_example=0x7f020018;
+        public static final int progress_primary_example=0x7f020019;
+        public static final int progress_secondary_example=0x7f02001a;
+        public static final int selectable_background_example=0x7f02001b;
+        public static final int selector=0x7f02001c;
+        public static final int spinner_ab_default_example=0x7f02001d;
+        public static final int spinner_ab_disabled_example=0x7f02001e;
+        public static final int spinner_ab_focused_example=0x7f02001f;
+        public static final int spinner_ab_pressed_example=0x7f020020;
+        public static final int spinner_background_ab_example=0x7f020021;
+        public static final int splash=0x7f020022;
+        public static final int tab_bg=0x7f020023;
+        public static final int tab_indicator_ab_example=0x7f020024;
+        public static final int tab_selected_bg=0x7f020025;
+        public static final int tab_selected_example=0x7f020026;
+        public static final int tab_selected_focused_example=0x7f020027;
+        public static final int tab_selected_pressed_example=0x7f020028;
+        public static final int tab_unselected_example=0x7f020029;
+        public static final int tab_unselected_focused_example=0x7f02002a;
+        public static final int tab_unselected_pressed_example=0x7f02002b;
+        public static final int tile=0x7f02002c;
     }
     public static final class id {
         public static final int action_settings=0x7f08000b;
@@ -83,11 +86,12 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int fragment_main=0x7f030001;
-        public static final int fragment_navigation_drawer=0x7f030002;
-        public static final int fragment_sample=0x7f030003;
-        public static final int pager_item=0x7f030004;
-        public static final int splash=0x7f030005;
+        public static final int drawer_list_item=0x7f030001;
+        public static final int fragment_main=0x7f030002;
+        public static final int fragment_navigation_drawer=0x7f030003;
+        public static final int fragment_sample=0x7f030004;
+        public static final int pager_item=0x7f030005;
+        public static final int splash=0x7f030006;
     }
     public static final class menu {
         public static final int global=0x7f070000;
