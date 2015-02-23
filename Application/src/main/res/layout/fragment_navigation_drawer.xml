@@ -4,3 +4,4 @@
     android:divider="@android:color/background_dark" android:dividerHeight="1dp"
     android:background="#FFFFFF"
     tools:context=".NavigationDrawerFragment" />
+    <!-- Action Bar Mavisi : 29A2FF-->

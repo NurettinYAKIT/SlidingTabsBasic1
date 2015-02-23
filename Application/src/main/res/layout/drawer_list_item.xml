@@ -23,6 +23,6 @@
     android:gravity="center_vertical"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:textColor="#fff"
-    android:background="@drawable/selector"
+    android:textColor="@drawable/selector_text"
+    android:background="@drawable/drawer_list_selector"
     android:minHeight="?android:attr/listPreferredItemHeightSmall"/>
