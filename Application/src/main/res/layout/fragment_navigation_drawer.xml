@@ -1,7 +1,6 @@
 <ListView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="240dp"
     android:layout_height="match_parent" android:choiceMode="singleChoice"
-
     android:background="#FFFFFF"
     tools:context=".NavigationDrawerFragment" />
     <!-- Action Bar Mavisi : 29A2FF-->
